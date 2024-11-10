@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    padding: 20px 100px;
+}
+
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    padding: 10px;
+    display: flex;
+}
+
+.box {
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(wolverine-adamantium-avenger-ga.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    padding: 50px 10px 10px;
+}
+
+.box h3 {
+    color:white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    transform: rotate(90deg);
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+
+
+.box:hover h3 {
+    transform: rotate(0deg);
+}
+
+.box p {
+    opacity: 0;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+
+.box:hover  {
+    width: 50%;
+    
+}
+
+
+.box:hover p {
+    opacity: 1;
+} 

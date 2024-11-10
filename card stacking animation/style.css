@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    padding: 0 50px;
+    background-color: #2E3537;
+}
+
+
+:root{
+    --cards:4;
+    --cardHeight:87vh;
+    --cardTopPadding:1.5em;
+    --cardMargin:4vw;
+}
+
+
+.container{
+    width:100%;
+}
+
+
+#cards{
+    list-style: none;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards),var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+}
+
+
+.card{
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#card1{
+    --index:1;
+}
+
+
+#card2{
+    --index:2;
+}
+
+
+
+
+#card3{
+    --index:3;
+}
+
+
+
+#card4{
+    --index:4;
+}
+
+
+
+#card1 .card-body{
+    background-color: red;
+}
+
+#card2 .card-body{
+    background-color: blue;
+}
+
+
+#card3 .card-body{
+    background-color: orange;
+}
+
+
+#card4 .card-body{
+    background-color: burlywood;
+}
+
+
+
+.card-body {
+    padding: 50px;
+    height: var(--cardHeight);
+    background-color: red;
+}
